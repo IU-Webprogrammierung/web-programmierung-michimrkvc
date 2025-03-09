@@ -72,6 +72,7 @@ nav ul li a:hover {
 
 footer {
     text-align: center;
+    margin-top: 56px;
 }
 
 /*  ===================
@@ -81,5 +82,27 @@ footer {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
-}   
+    gap: 28px;
+}
+
+
+/*  ===================
+    Page-specific Styles
+    =================== */
+
+.about-img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 16px;
+}
+
+.contact-form {
+    padding-top: 48px;
+}
+
+.contact-form input {
+    margin-top: 8px;
+    padding: 4px;
+    border: 1px solid #949393;
+    border-radius: 4px;
+}
