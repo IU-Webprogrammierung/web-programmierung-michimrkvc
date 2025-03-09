@@ -53,7 +53,7 @@ nav ul li a:hover {
 }
 
 .card:hover {
-background-color: #f0f0f0;
+    background-color: #f0f0f0;
 }
 
 .button {
@@ -73,3 +73,13 @@ background-color: #f0f0f0;
 footer {
     text-align: center;
 }
+
+/*  ===================
+         Layout 
+    =================== */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}   
