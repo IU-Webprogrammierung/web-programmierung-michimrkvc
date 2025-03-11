@@ -11,7 +11,6 @@ h1 {
     font-size: 48px;
 }
 
-
 footer {
     display: flex;
     flex-direction: column;
@@ -24,6 +23,10 @@ footer {
     display: flex;
     justify-content: center;
     gap: 12px;
+}
+
+section {
+    padding: 0 48px;
 }
 
 span {
@@ -184,4 +187,51 @@ nav ul li a:hover {
     display: flex;
     justify-content: left;
     gap: 12px;
+}
+
+.project-banner {
+    width: 100%;
+    height:auto;
+}
+
+.project-columns {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.column {
+    padding: 0;
+}
+
+.point-container {
+    display: flex;
+    justify-content: center; 
+    gap: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #6F52A7;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    
+    display: flex;
+    justify-content: center;  /* Horizontale Zentrierung */
+    align-items: center;  /* Vertikale Zentrierung */
+}
+
+.purple-section {
+    background-color: #E1D7F4;
 }
