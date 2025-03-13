@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoVienna</title>
     <link rel="stylesheet" href="styles.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+
+<script defer>
+    $(document).ready(function () {
+        $("header").load("components/header.html");
+    });
+</script>
 
 <body>
     <div class="content">
-        <nav class="navbar" aria-label="Hauptnavigation">
-            <a href="index.html" class="logo" aria-label="Zur Startseite">
-                <img src="Bilder/Logo.svg"></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <header>
+    
+        </header>
+    
         <h1>MoVienna</h1>
         <img class="project-banner" src="Bilder/MoVienna.png" alt="A teaser picture for the project MoVienna">
         <section>

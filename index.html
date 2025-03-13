@@ -9,31 +9,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!--Skip Link hinzufügen-->
 </head>
 
+<script defer>
+    $(document).ready(function () {
+        $("header").load("components/header.html");
+    });
+</script>
+
 <body>
     <div class="content">
-        <div class="navbar">
-            <a href="index.html" class="logo" aria-label="Zur Startseite">
-                <img src="Bilder/Logo.svg" alt="Logo">
-            </a>
+        <header>
+        </header>
 
-            <!--Hamburger Menü Checkbox-->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
-                <img src="Bilder/hamburger-menu.svg">
-            </label>
-
-            <!--Navigation-->
-            <nav class="nav-links" aria-label="Hauptnavigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
         <section>
             <h1>Hi! I'm <span>Michi</span>,</h1>
             <p class="intro">a passionate UX designer dedicated to creating meaningful experiences that put users first.
