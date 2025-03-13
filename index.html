@@ -14,15 +14,26 @@
 
 <body>
     <div class="content">
-        <nav class="navbar" aria-label="Hauptnavigation">
+        <div class="navbar">
             <a href="index.html" class="logo" aria-label="Zur Startseite">
-                <img src="Bilder/Logo.svg"></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+                <img src="Bilder/Logo.svg" alt="Logo">
+            </a>
+
+            <!--Hamburger Menü Checkbox-->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <img src="Bilder/hamburger-menu.svg">
+            </label>
+
+            <!--Navigation-->
+            <nav class="nav-links" aria-label="Hauptnavigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
         <section>
             <h1>Hi! I'm <span>Michi</span>,</h1>
             <p class="intro">a passionate UX designer dedicated to creating meaningful experiences that put users first.
