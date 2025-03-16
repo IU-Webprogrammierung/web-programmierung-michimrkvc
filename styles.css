@@ -288,6 +288,11 @@ nav {
     background-color: #E1D7F4;
 }
 
+.project-img {
+    width: 100%;
+    height: auto;
+}
+
 /*  ===================
        Media Queries
     =================== */
@@ -296,6 +301,37 @@ nav {
     .grid-container {
         grid-template-columns: 1fr;
     }
+
+    .point-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .project-columns {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .point-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .point {
+        max-width: 300px;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -335,4 +371,5 @@ nav {
         flex-direction: column;
         align-items: center;
     }
+
 }
