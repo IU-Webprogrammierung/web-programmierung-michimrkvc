@@ -9,6 +9,7 @@ body {
 h1 {
     color: #000000;
     font-size: 48px;
+    margin-top: 0px;
 }
 
 footer {
@@ -190,19 +191,19 @@ nav {
     =================== */
 
 .about-img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
     border-radius: 16px;
     display: block;
     margin: 0 auto;
     width: calc(50% - 20px);
+    max-width: 500px;
     min-width: 280px;
+    height: auto;
     flex-grow: 1;
+    object-fit: cover;
 }
 
 .contact-form, .contact-text {
-    padding-top: 48px;
+
     width: calc(50% - 20px);
     min-width: 280px;
     flex-grow: 1;
@@ -242,7 +243,7 @@ nav {
     font-size: 20px;
     font-weight: 300;
     width: calc(50% - 20px);
-    min-width: 280px;
+    min-width: 300px;
     flex-grow: 1;
 }
 
