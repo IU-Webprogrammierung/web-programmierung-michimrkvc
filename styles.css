@@ -196,10 +196,16 @@ nav {
     border-radius: 16px;
     display: block;
     margin: 0 auto;
+    width: calc(50% - 20px);
+    min-width: 280px;
+    flex-grow: 1;
 }
 
-.contact-form {
+.contact-form, .contact-text {
     padding-top: 48px;
+    width: calc(50% - 20px);
+    min-width: 280px;
+    flex-grow: 1;
 }
 
 .contact-form input {
@@ -235,6 +241,9 @@ nav {
     max-width: 720px;
     font-size: 20px;
     font-weight: 300;
+    width: calc(50% - 20px);
+    min-width: 280px;
+    flex-grow: 1;
 }
 
 .logo-socials {
@@ -350,6 +359,9 @@ nav {
         width: 100%;
     }
 
+    .contact-text, .contact-form {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
