@@ -112,7 +112,7 @@ nav {
     max-width: 420px;
     flex: 1 1 calc(45% - 24px);
     max-width: 500px;
-    min-width: 300px; 
+    min-width: 300px;
     flex-grow: 1;
     border-radius: 12px;
     background-color: #ffffff;
@@ -176,10 +176,10 @@ nav {
 }
 
 .grid-container {
-    
+
     display: flex;
-    flex-wrap: wrap; 
-    gap: 32px; 
+    flex-wrap: wrap;
+    gap: 32px;
     justify-content: center;
     max-width: 1100px;
     margin: 0 auto;
@@ -202,7 +202,8 @@ nav {
     object-fit: cover;
 }
 
-.contact-form, .contact-text {
+.contact-form,
+.contact-text {
 
     width: calc(50% - 20px);
     min-width: 280px;
@@ -238,11 +239,36 @@ nav {
     font-size: 14px;
 }
 
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.hero-element {
+    flex: 0 1 auto;
+}
+
+.hero-element img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    flex: 1 1 600px;
+    max-width: 720px;
+}
+
 .intro {
     max-width: 720px;
     font-size: 20px;
     font-weight: 300;
-    width: calc(50% - 20px);
     min-width: 300px;
     flex-grow: 1;
 }
@@ -360,7 +386,8 @@ nav {
         width: 100%;
     }
 
-    .contact-text, .contact-form {
+    .contact-text,
+    .contact-form {
         width: 100%;
     }
 }
