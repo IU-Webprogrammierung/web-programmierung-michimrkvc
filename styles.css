@@ -116,7 +116,7 @@ nav {
     flex-grow: 1;
     border-radius: 12px;
     background-color: #ffffff;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 16px;
     border: 1px solid #00000023;
 }
@@ -143,6 +143,8 @@ nav {
 
 .card:hover {
     background-color: #f0f0f0;
+    transform: scale(1.02); /* Vergrößert die Karte um 10% */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .button {
