@@ -202,6 +202,12 @@ nav {
     object-fit: cover;
 }
 
+.card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
 .contact-form,
 .contact-text {
 
