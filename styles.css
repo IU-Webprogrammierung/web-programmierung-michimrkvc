@@ -205,6 +205,10 @@ nav {
     object-fit: cover;
 }
 
+.intro-about p {
+    margin-bottom: 16px; 
+}
+
 .card a {
     display: block;
     text-decoration: none;
@@ -369,7 +373,16 @@ nav {
        Media Queries
     =================== */
 
+    @media (max-width: 1017px) {
+
+        .about-img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
 @media (max-width: 979px) {
+
     .grid-container {
         grid-template-columns: 1fr;
     }
