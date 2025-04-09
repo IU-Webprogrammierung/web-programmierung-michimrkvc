@@ -1,6 +1,21 @@
 /*  ===================
       General Styles 
     =================== */
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('fonts/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('fonts/DMSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
     background-color: #ffffff;
     font-family: 'DM Sans', sans-serif;
@@ -145,7 +160,8 @@ nav {
 
 .card:hover {
     background-color: #f0f0f0;
-    transform: scale(1.02); /* Vergrößert die Karte um 10% */
+    transform: scale(1.02);
+    /* Vergrößert die Karte um 10% */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -206,7 +222,7 @@ nav {
 }
 
 .intro-about p {
-    margin-bottom: 16px; 
+    margin-bottom: 16px;
 }
 
 .card a {
@@ -356,9 +372,9 @@ nav {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     padding: 40px 0;
-  }
+}
 
-  .beige-inner {
+.beige-inner {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 24px;
@@ -373,13 +389,13 @@ nav {
        Media Queries
     =================== */
 
-    @media (max-width: 1017px) {
+@media (max-width: 1017px) {
 
-        .about-img {
-            width: 100%;
-            max-width: 100%;
-        }
+    .about-img {
+        width: 100%;
+        max-width: 100%;
     }
+}
 
 @media (max-width: 979px) {
 
