@@ -1,6 +1,23 @@
 /*  ===================
       General Styles 
     =================== */
+    :root {
+        --background-light: #ffffff;
+        --background-dark: #121212;
+        --text-light: #000000;
+        --text-dark: #ffffff;
+        --primary-color: #856F6F;
+        --secondary-color: #2ecc71;
+    }
+
+    .darkmode {
+        --background-light: #121212;
+        --background-dark: #ffffff;
+        --text-light: #ffffff;
+        --text-dark: #121212;
+        --primary-color: #856F6F;
+        --secondary-color: #2ecc71;
+    }
 
 @font-face {
     font-family: 'DM Sans';
@@ -17,12 +34,12 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: var(--background-light);
     font-family: 'DM Sans', sans-serif;
 }
 
 h1 {
-    color: #000000;
+    color: var(--text-light);
     font-size: 48px;
     margin-top: 0px;
 }
@@ -50,7 +67,37 @@ section {
 }
 
 span {
-    color: #856F6F;
+    color: var(--primary-color);
+}
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-switch img{
+    fill: var(--primary-color)
+}
+
+#theme-switch img:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch img:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch img:last-child{
+    display: block;
 }
 
 /*  ===================
@@ -58,7 +105,7 @@ span {
     =================== */
 
 nav {
-    background-color: #ffffff;
+    background-color: var(--background-light);
     padding: 8px 0;
 }
 
@@ -128,7 +175,7 @@ nav {
     min-width: 300px;
     flex-grow: 1;
     border-radius: 12px;
-    background-color: #ffffff;
+    background-color: var(--background-light);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 16px;
     border: 1px solid #00000023;
@@ -142,7 +189,7 @@ nav {
 }
 
 .card-content {
-    color: #000000a6;
+    color: var(--text-light);
     padding-top: 4px;
 }
 
@@ -165,8 +212,8 @@ nav {
 }
 
 .button {
-    background-color: #512500;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--background-light);
     padding: 12px 24px;
     border: none;
     border-radius: 16px;
@@ -408,22 +455,63 @@ nav {
     font-size: 16px;
     border: none;
     outline: none;
-    background-color: #856F6F;
+    background-color: var(--primary-color);
     color: white;
     cursor: pointer;
     padding: 12px 12px;
     border-radius: 20px;
     transition: 0.3s;
     display: flex;
-    /* Flexbox für den Button */
     align-items: center;
-    /* Vertikale Zentrierung */
     justify-content: center;
-    /* Horizontale Zentrierung */
     gap: 8px;
     text-align: center;
-    /* Text ausrichten */
 }
+
+/*  ===================
+         Dark Mode
+    =================== */
+    
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #121212;
+            color: white;
+        }
+    
+        button {
+            background-color: #333;
+            color: white;
+        }
+    
+        .navbar {
+            background-color: #1a1a1a; /* Dunklerer Hintergrund für die Navbar */
+        }
+    
+        .nav-links a {
+            color: white;
+        }
+    
+        .nav-links a:hover {
+            background-color: #444; /* Hellerer Hover-Effekt */
+        }
+    }
+    
+    body.dark-mode {
+        background-color: #121212;
+        color: white;
+    }
+    
+    body.dark-mode .navbar {
+        background-color: #1a1a1a; /* Dunklerer Hintergrund für die Navbar im Dark Mode */
+    }
+    
+    body.dark-mode .nav-links a {
+        color: white;
+    }
+    
+    body.dark-mode .nav-links a:hover {
+        background-color: #444;
+    }
 
 /*  ===================
        Media Queries
