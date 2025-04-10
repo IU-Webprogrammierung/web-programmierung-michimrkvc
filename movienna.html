@@ -10,6 +10,21 @@
 </head>
 
 <script defer>
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("toTopButton").addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    window.addEventListener("scroll", function () {
+        const btn = document.getElementById("toTopButton");
+        if (window.scrollY > 300) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    });
+});
+
     $(document).ready(function () {
         $("header").load("components/header.html");
     });
@@ -18,12 +33,13 @@
 <body>
     <div class="content">
         <header>
-    
+
         </header>
-    
-        <section><h1>Mo<span>Vienna</span></h1>
-        <img class="project-banner" src="Bilder/MoVienna.png" alt="A teaser picture for the project MoVienna">
-        
+
+        <section>
+            <h1>Mo<span>Vienna</span></h1>
+            <img class="project-banner" src="Bilder/MoVienna.png" alt="A teaser picture for the project MoVienna">
+
             <h2>01 Project Overview</h2>
             <div class="project-columns">
                 <div class="column">
@@ -76,7 +92,8 @@
                 <div class="point">
                     <div class="circle">2</div>
                     <p>Convenient</p>
-                    <p>When booking tickets it would be the best if everything is available in the app and not just sent by email</p>
+                    <p>When booking tickets it would be the best if everything is available in the app and not just sent
+                        by email</p>
                 </div>
 
                 <div class="point">
@@ -88,7 +105,8 @@
                 <div class="point">
                     <div class="circle">4</div>
                     <p>Simplicity</p>
-                    <p>The offered elements should not be overwhelming as long as you can do the basic things with the app</p>
+                    <p>The offered elements should not be overwhelming as long as you can do the basic things with the
+                        app</p>
                 </div>
             </div>
             <h3>Persona: Debbie</h3>
@@ -97,18 +115,22 @@
                 not
                 want
                 to browse through all her mails to find her tickets.</p>
-            <img class="project-img" src="Bilder/Persona Debbie.png" alt="A summary of the Persona Debbie and her goals and frustrations"
-                height="300">
+            <img class="project-img" src="Bilder/Persona Debbie.png"
+                alt="A summary of the Persona Debbie and her goals and frustrations" height="300">
             <h3>Persona: Evelin</h3>
             <h4>Problem Statement</h4>
             <p>Evelin is a retiree from Germany who needs an easy to understand app because she doesn't like to be
                 overwhelmed
                 with informations.</p>
-            <img class="project-img" src="Bilder/Persona Evelin.png" alt="A summary of the Persona Evelin and her goals and frustrations"
-                height="300">
+            <img class="project-img" src="Bilder/Persona Evelin.png"
+                alt="A summary of the Persona Evelin and her goals and frustrations" height="300">
         </section>
         <!--Im nächsten Schritt überlegen, ob es eine barrierefreiere Möglichkeit gibt Informationen über die Personas darzustellen-->
     </div>
+    <button id="toTopButton" title="Go to top of the page">
+        <img class="arrow-up" src="Bilder/arrow-up.svg" alt="Go to the top of the page">
+        <span class="to-top">Back to top</span>
+    </button>
 </body>
 
 <footer>&copy 2025 Michaela Markovic. All rights reserved.

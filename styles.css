@@ -220,6 +220,12 @@ nav {
     object-fit: cover;
 }
 
+.arrow-up {
+    margin-top: auto;
+    width: 20px;
+    height: 20px;
+}
+
 .intro-about p {
     margin-bottom: 16px;
 }
@@ -384,6 +390,41 @@ nav {
     height: auto;
 }
 
+.to-top {
+    color: white;
+    display: flex;
+    align-items: center;
+    /* Vertikale Zentrierung */
+    justify-content: center;
+    /* Horizontale Zentrierung */
+}
+
+#toTopButton {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #856F6F;
+    color: white;
+    cursor: pointer;
+    padding: 12px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+    display: flex;
+    /* Flexbox für den Button */
+    align-items: center;
+    /* Vertikale Zentrierung */
+    justify-content: center;
+    /* Horizontale Zentrierung */
+    gap: 8px;
+    text-align: center;
+    /* Text ausrichten */
+}
+
 /*  ===================
        Media Queries
     =================== */
@@ -445,6 +486,21 @@ nav {
     .contact-text,
     .contact-form {
         width: 100%;
+    }
+
+    #toTopButton {
+        border-radius: 50%;
+    }
+
+    #toTopButton span {
+        display: none;
+        /* Text wird auf mobilen Geräten ausgeblendet */
+    }
+
+    #toTopButton img {
+        width: 30px;
+        /* Größeres Icon für mobile Ansicht */
+        height: 30px;
     }
 }
 
