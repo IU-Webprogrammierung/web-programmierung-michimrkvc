@@ -8,31 +8,29 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!--Skip Link hinzufügen-->
-    <script type="text/javascript" src="darkmode.js" defer></script>
+    <script type="text/javascript" src="scripts/darkmode.js" defer></script>
 </head>
-
-<script defer>
-    $(document).ready(function () {
-        $("header").load("components/header.html");
-    });
-</script>
 
 <body>
     <div class="content">
         <header>
-            
+
         </header>
 
-        <section>
+        <section class="hero-section">
+            <button id="theme-switch">
+                <img src="bilder/dark-mode.svg" alt="Switch to Dark Mode">
+                <img src="Bilder/light-mode.svg" alt="Switch to Light Mode">
+            </button>
+
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Hi! I'm <span>Michi</span>,</h1>
+                        <h1>Hi! I'm <span>Michi</span>,</h1>
+
                     <p class="intro">a passionate UX designer dedicated to creating meaningful experiences that put
-                        users
-                        first.
-                        My design philosophy revolves around empathy, accessibility, and innovation, ensuring every
-                        solution
-                        is not only functional but also inclusive for all.
+                        users first. My design philosophy revolves around empathy, accessibility, and innovation,
+                        ensuring every
+                        solution is not only functional but also inclusive for all.
                     </p>
                 </div>
                 <div class="hero-element">
@@ -69,31 +67,10 @@
     </footer>
 
     <script>
-const toggleButton = document.getElementById('darkModeToggle');
-
-// Prüfe, ob der Dark Mode bereits gespeichert wurde
-if (localStorage.getItem('darkMode') === 'enabled') {
-    document.body.classList.add('dark-mode');
-    toggleButton.textContent = 'Light Mode';
-}
-
-// Event Listener für den Toggle-Button
-toggleButton.addEventListener('click', () => {
-    // Wenn der Dark Mode aktiviert ist, schalte ihn aus
-    if (document.body.classList.contains('dark-mode')) {
-        document.body.classList.remove('dark-mode');
-        localStorage.setItem('darkMode', 'disabled');
-        toggleButton.textContent = 'Dark Mode';
-    } 
-    // Andernfalls schalte den Dark Mode ein
-    else {
-        document.body.classList.add('dark-mode');
-        localStorage.setItem('darkMode', 'enabled');
-        toggleButton.textContent = 'Light Mode';
-    }
-});
+        $(document).ready(function () {
+            $("header").load("components/header.html");
+        });
     </script>
-
 </body>
 
 </html>
