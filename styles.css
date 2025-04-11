@@ -2,23 +2,21 @@
       General Styles 
     =================== */
 :root {
-    --background-light: #ffffff;
-    --background-dark: #121212;
-    --text-light: #000000;
-    --text-dark: #ffffff;
-    --primary-color: #856F6F;
-    --secondary-color: #2ecc71;
+    --background: #ffffff;
+    --text: #000000;
+    --primary-color: #512500;
+    --secondary-color: #856F6F;
     --base-variant: #ffffff;
+    --card-hover: #f0f0f0;
 }
 
 .darkmode {
-    --background-light: #121212;
-    --background-dark: #ffffff;
-    --text-light: #ffffff;
-    --text-dark: #121212;
-    --primary-color: #856F6F;
-    --secondary-color: #2ecc71;
+    --background: #121212;
+    --text: #ffffff;
+    --primary-color: #a89d9d;
+    --secondary-color: #512500;
     --base-variant: #121212;
+    --card-hover: #413b3b;
 }
 
 @font-face {
@@ -36,15 +34,28 @@
 }
 
 body {
-    background-color: var(--background-light);
+    background-color: var(--background);
+    color: var(--text);
     font-family: 'DM Sans', sans-serif;
 }
 
 h1 {
-    color: var(--text-light);
+    color: var(--text);
     font-size: 48px;
     margin-top: 0px;
 
+}
+
+.icon-dark {
+    display: none;
+}
+
+.darkmode .icon-light {
+    display: none;
+}
+
+.darkmode .icon-dark {
+    display: block;
 }
 
 footer {
@@ -84,7 +95,7 @@ span {
     justify-content: center;
     align-items: center;
     position: absolute;
-    cursor: pointer; 
+    cursor: pointer;
     right: 1rem;
 }
 
@@ -113,7 +124,7 @@ span {
     =================== */
 
 nav {
-    background-color: var(--background-light);
+    background-color: var(--background);
     padding: 8px 0;
 }
 
@@ -141,8 +152,10 @@ nav {
 
 .navbar .nav-links ul {
     display: flex;
-    align-items: center; /* Vertikale Ausrichtung */
-    gap: 20px; /* Abstand zwischen den Elementen */
+    align-items: center;
+    /* Vertikale Ausrichtung */
+    gap: 20px;
+    /* Abstand zwischen den Elementen */
 }
 
 .nav-links li {
@@ -154,7 +167,7 @@ nav {
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
-    color: #512500;
+    color: var(--primary-color);
 }
 
 .nav-links a:hover {
@@ -183,7 +196,7 @@ nav {
     min-width: 300px;
     flex-grow: 1;
     border-radius: 12px;
-    background-color: var(--background-light);
+    background-color: var(--background);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 16px;
     border: 1px solid #00000023;
@@ -197,7 +210,7 @@ nav {
 }
 
 .card-content {
-    color: var(--text-light);
+    color: var(--text);
     padding-top: 4px;
 }
 
@@ -213,7 +226,7 @@ nav {
 }
 
 .card:hover {
-    background-color: #f0f0f0;
+    background-color: var(--card-hover);
     transform: scale(1.02);
     /* Vergrößert die Karte um 10% */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -221,7 +234,7 @@ nav {
 
 .button {
     background-color: var(--primary-color);
-    color: var(--background-light);
+    color: var(--background);
     padding: 12px 24px;
     border: none;
     border-radius: 16px;
@@ -353,7 +366,8 @@ nav {
 }
 
 .hero-section {
-    position: relative; /* Wichtig für die Positionierung des Buttons innerhalb dieser Section */
+    position: relative;
+    /* Wichtig für die Positionierung des Buttons innerhalb dieser Section */
 }
 
 .hero-text {
