@@ -7,6 +7,7 @@
     <title>About me</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/darkmode.js" defer></script>
 </head>
 
 <script defer>
@@ -19,7 +20,11 @@
     <div class="content">
         <header>
         </header>
-        <section>
+        <section class="hero-section">
+            <button id="theme-switch">
+                <img src="bilder/dark-mode.svg" alt="Switch to Dark Mode">
+                <img src="Bilder/light-mode.svg" alt="Switch to Light Mode">
+            </button>
             <h1>About <span>me</span></h1>
             <div class="grid-container">
                 <div class="intro-about">
@@ -57,8 +62,11 @@
 </body>
 
 <footer>&copy 2025 Michaela Markovic. All rights reserved.
-    <section class="footer-social"><img src="Bilder/linkedin.png" height="24">
-        <img src="Bilder/instagram.png" height="24"> <img src="Bilder/dribble-logo.svg" height="24">
+    <section class="footer-social">
+        <img class="icon-light" src="Bilder/linkedin.png" height="24">
+        <img class="icon-dark" src="bilder/linkedin-dark.png" height="24">
+        <img class="icon-light" src="Bilder/dribble-light.svg" height="24">
+        <img class="icon-dark" src="Bilder/dribbble-dark.png" height="24">
     </section>
 </footer>
 
