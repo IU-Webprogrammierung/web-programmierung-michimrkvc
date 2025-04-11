@@ -7,23 +7,24 @@
     <title>MoVienna</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/darkmode.js" defer></script>
 </head>
 
 <script defer>
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("toTopButton").addEventListener("click", function () {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("toTopButton").addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
 
-    window.addEventListener("scroll", function () {
-        const btn = document.getElementById("toTopButton");
-        if (window.scrollY > 300) {
-            btn.style.display = "block";
-        } else {
-            btn.style.display = "none";
-        }
+        window.addEventListener("scroll", function () {
+            const btn = document.getElementById("toTopButton");
+            if (window.scrollY > 300) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        });
     });
-});
 
     $(document).ready(function () {
         $("header").load("components/header.html");
@@ -36,7 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         </header>
 
-        <section>
+        <section class="hero-section">
+            <button id="theme-switch">
+                <img src="bilder/dark-mode.svg" alt="Switch to Dark Mode">
+                <img src="Bilder/light-mode.svg" alt="Switch to Light Mode">
+            </button>
             <h1>Mo<span>Vienna</span></h1>
             <img class="project-banner" src="Bilder/MoVienna.png" alt="A teaser picture for the project MoVienna">
 
@@ -134,8 +139,11 @@ document.addEventListener("DOMContentLoaded", function () {
 </body>
 
 <footer>&copy 2025 Michaela Markovic. All rights reserved.
-    <section class="footer-social"><img src="Bilder/linkedin.png" height="24">
-        <img src="Bilder/instagram.png" height="24"> <img src="Bilder/dribble-logo.svg" height="24">
+    <section class="footer-social">
+        <img class="icon-light" src="Bilder/linkedin.png" height="24">
+        <img class="icon-dark" src="bilder/linkedin-dark.png" height="24">
+        <img class="icon-light" src="Bilder/dribble-light.svg" height="24">
+        <img class="icon-dark" src="Bilder/dribbble-dark.png" height="24">
     </section>
 </footer>
 

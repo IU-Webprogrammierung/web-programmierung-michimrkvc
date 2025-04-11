@@ -1,25 +1,27 @@
 /*  ===================
       General Styles 
     =================== */
-:root {
-    --background-light: #ffffff;
-    --background-dark: #121212;
-    --text-light: #000000;
-    --text-dark: #ffffff;
-    --primary-color: #856F6F;
-    --secondary-color: #2ecc71;
-    --base-variant: #ffffff;
-}
+    :root {
+        --background: #ffffff;
+        --text: #000000;
+        --primary-color: #512500;
+        --secondary-color: #856F6F;
+        --highlight-color: #E1D7F4;
+        --on-highlight-color: #6F52A7;
+        --base-variant: #ffffff;
+        --card-hover: #f0f0f0;
+    }
 
-.darkmode {
-    --background-light: #121212;
-    --background-dark: #ffffff;
-    --text-light: #ffffff;
-    --text-dark: #121212;
-    --primary-color: #856F6F;
-    --secondary-color: #2ecc71;
-    --base-variant: #121212;
-}
+    .darkmode {
+        --background: #121212;
+        --text: #ffffff;
+        --primary-color: #a89d9d;
+        --secondary-color: #512500;
+        --highlight-color: #6F52A7;
+        --on-highlight-color: #E1D7F4;
+        --base-variant: #121212;
+        --card-hover: #413b3b;
+    }
 
 @font-face {
     font-family: 'DM Sans';
@@ -415,8 +417,8 @@ nav {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #6F52A7;
-    color: white;
+    background-color: var(--on-highlight-color);
+    color: var(--highlight-color);
     font-size: 20px;
     font-weight: bold;
 
@@ -428,7 +430,7 @@ nav {
 }
 
 .purple-section {
-    background-color: #E1D7F4;
+    background-color: var(--highlight-color);
 }
 
 .beige-section {
