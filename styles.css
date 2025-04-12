@@ -10,6 +10,7 @@
     --on-highlight-color: #6F52A7;
     --base-variant: #ffffff;
     --card-hover: #f0f0f0;
+    --hamburger-menu: #f0f0f0;
 }
 
 .darkmode {
@@ -21,6 +22,7 @@
     --on-highlight-color: #E1D7F4;
     --base-variant: #121212;
     --card-hover: #413b3b;
+    --hamburger-menu: #332e2e;
 }
 
 @font-face {
@@ -375,7 +377,7 @@ nav {
 }
 
 .form-message.error {
-    background-color: #f8d7da; 
+    background-color: #f8d7da;
     color: #721c24;
     padding: 8px;
 }
@@ -651,7 +653,7 @@ body.dark-mode .nav-links a:hover {
 }
 
 @media (max-width: 480px) {
-    
+
     .menu-icon {
         display: block;
         position: relative;
@@ -666,7 +668,7 @@ body.dark-mode .nav-links a:hover {
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: var(--card-hover);
+        background-color: var(--hamburger-menu);
         text-align: center;
         padding: 10px 0;
         border-radius: 5px;
