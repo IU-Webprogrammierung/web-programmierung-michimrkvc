@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/darkmode.js" defer></script>
     <script src="scripts/form-validation.js" defer></script>
     <link rel="icon" href="bilder/favicon.png" type="image/png">
@@ -23,8 +22,8 @@
                 <!--Hamburger Menü Checkbox-->
                 <input type="checkbox" id="menu-toggle">
                 <label for="menu-toggle" class="menu-icon">
-                    <img class="icon-light" src="Bilder/hamburger-menu.svg">
-                    <img class="icon-dark" src="bilder/hamburger-menu-dark.svg">
+                    <img class="icon-light" src="Bilder/hamburger-menu.svg" alt="Open menu">
+                    <img class="icon-dark" src="bilder/hamburger-menu-dark.svg" alt="Open menu">
                 </label>
 
                 <!--Navigation-->
@@ -60,19 +59,19 @@
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
-                            <label>Full name
+                            <label for="name">Full name
                                 <input type="text" name="name" placeholder="Insert your name here" required>
                             </label>
                         </div>
 
                         <div class="form-group">
-                            <label>E-Mail
+                            <label for="email">E-Mail
                                 <input type="email" name="E-Mail" placeholder="Insert your e-mail here" required>
                             </label>
                         </div>
 
                         <div class="form-group">
-                            <label>Message
+                            <label for="message">Message
                                 <textarea name="Message" rows="6" placeholder="Write your message here"
                                     required></textarea>
                             </label>
@@ -90,10 +89,15 @@
 
 <footer>&copy 2025 Michaela Markovic. All rights reserved.
     <section class="footer-social">
-        <img class="icon-light" src="Bilder/linkedin.png" height="24">
-        <img class="icon-dark" src="bilder/linkedin-dark.png" height="24">
-        <img class="icon-light" src="Bilder/dribble-light.svg" height="24">
-        <img class="icon-dark" src="Bilder/dribbble-dark.png" height="24">
+        <a href="https://www.linkedin.com" aria-label="Visit my LinkedIn profile">
+            <img class="icon-light" src="Bilder/linkedin.png" height="24">
+            <img class="icon-dark" src="bilder/linkedin-dark.png" height="24">
+        </a>
+
+        <a href="https://www.dribbble.com" aria-label="Visit my Dribbble profile">
+            <img class="icon-light" src="Bilder/dribble-light.svg" height="24">
+            <img class="icon-dark" src="Bilder/dribbble-dark.png" height="24">
+        </a>
     </section>
 </footer>
 
