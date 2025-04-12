@@ -651,7 +651,7 @@ body.dark-mode .nav-links a:hover {
 }
 
 @media (max-width: 480px) {
-
+    
     .menu-icon {
         display: block;
         position: relative;
@@ -666,11 +666,12 @@ body.dark-mode .nav-links a:hover {
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #ffffff;
+        background-color: var(--card-hover);
         text-align: center;
         padding: 10px 0;
         border-radius: 5px;
         z-index: 1001;
+
     }
 
     .nav-links ul {
@@ -687,5 +688,4 @@ body.dark-mode .nav-links a:hover {
         flex-direction: column;
         align-items: center;
     }
-
 }
