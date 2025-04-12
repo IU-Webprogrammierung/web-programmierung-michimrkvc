@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/darkmode.js" defer></script>
+    <script src="scripts/form-validation.js" defer></script>
     <link rel="icon" href="bilder/favicon.png" type="image/png">
 </head>
 
@@ -42,27 +43,27 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form>
+                    <form id="contactForm">
                         <div class="form-group">
                             <label>Full name
-                                <input type="text" name="name" placeholder="Insert your name here">
+                                <input type="text" name="name" placeholder="Insert your name here" required>
                             </label>
                         </div>
 
                         <div class="form-group">
                             <label>E-Mail
-                                <input type="text" name="E-Mail" placeholder="Insert your e-mail here">
+                                <input type="email" name="E-Mail" placeholder="Insert your e-mail here" required>
                             </label>
                         </div>
 
                         <div class="form-group">
                             <label>Message
-                                <textarea type="text" name="Message" rows="6"
-                                    placeholder="Write your message here"></textarea>
+                                <textarea name="Message" rows="6" placeholder="Write your message here" required></textarea> 
                             </label>
                         </div>
 
-                        <button class="button" type="button">Send message</button>
+                        <button class="button" type="submit">Send message</button>
+                        <div id="formMessage" class="form-message"></div>
                     </form>
                 </div>
             </div>

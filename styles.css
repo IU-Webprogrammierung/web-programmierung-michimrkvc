@@ -360,6 +360,26 @@ nav {
     margin-bottom: 16px;
 }
 
+.form-message {
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+.form-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 8px;
+}
+
+.form-message.error {
+    background-color: #f8d7da; 
+    color: #721c24;
+    padding: 8px;
+}
+
 .hero-content {
     display: flex;
     align-items: center;
