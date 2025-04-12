@@ -47,7 +47,6 @@ h1 {
     color: var(--text);
     font-size: 48px;
     margin-top: 0px;
-
 }
 
 .icon-dark {
@@ -92,6 +91,7 @@ span {
     height: 30px;
     width: 30px;
     padding: 0;
+    margin-top: -16px;
     border: none;
     border-radius: 50%;
     background-color: var(--base-variant);
@@ -345,6 +345,17 @@ nav {
     font-size: 14px;
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .form-group {
     margin-bottom: 16px;
 }
@@ -371,7 +382,6 @@ nav {
 
 .hero-section {
     position: relative;
-    /* Wichtig für die Positionierung des Buttons innerhalb dieser Section */
 }
 
 .hero-text {
@@ -437,7 +447,6 @@ nav {
     color: var(--highlight-color);
     font-size: 20px;
     font-weight: bold;
-
     display: flex;
     justify-content: center;
     /* Horizontale Zentrierung */
@@ -471,9 +480,7 @@ nav {
     color: white;
     display: flex;
     align-items: center;
-    /* Vertikale Zentrierung */
     justify-content: center;
-    /* Horizontale Zentrierung */
 }
 
 #toTopButton {
@@ -515,7 +522,6 @@ nav {
 
     .navbar {
         background-color: #1a1a1a;
-        /* Dunklerer Hintergrund für die Navbar */
     }
 
     .nav-links a {
@@ -535,7 +541,6 @@ body.dark-mode {
 
 body.dark-mode .navbar {
     background-color: #1a1a1a;
-    /* Dunklerer Hintergrund für die Navbar im Dark Mode */
 }
 
 body.dark-mode .nav-links a {
