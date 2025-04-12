@@ -7,7 +7,6 @@
     <title>Michaela Markovic | UX Design</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!--Skip Link hinzufügen-->
     <script type="text/javascript" src="scripts/darkmode.js" defer></script>
     <link rel="icon" href="bilder/favicon.png" type="image/png">
 </head>
@@ -15,7 +14,26 @@
 <body>
     <div class="content">
         <header>
-
+            <div class="navbar">
+                <a href="index.html" aria-label="Zur Startseite">
+                    <img class="logo" src="Bilder/Logo.svg" alt="Logo">
+                </a>
+            
+                <!--Hamburger Menü Checkbox-->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">
+                    <img src="Bilder/hamburger-menu.svg">
+                </label>
+            
+                <!--Navigation-->
+                <nav class="nav-links" aria-label="Hauptnavigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <section class="hero-section">
@@ -67,12 +85,6 @@
             <img class="icon-dark" src="Bilder/dribbble-dark.png" height="24">
         </section>
     </footer>
-
-    <script>
-        $(document).ready(function () {
-            $("header").load("components/header.html");
-        });
-    </script>
 </body>
 
 </html>
