@@ -1,8 +1,8 @@
 <h1>Projekt: Web-Programmierung (DLBUXPWP01)</h1>
 Michaela Markovic | Matrikelnummer: 92016298
 <br><br>
-Bei diesem Projekt für das Creative Lab "Web-programmierung" handelt es sich um eine Portfolio-Website mit Fokus auf UX Design Projekten.
-Im Rahmen dieses Projekts sollen die Seiten Home, Über mich, Kontakt sowie eine Projektseite erstellt werden. Die Home-Seite wird hierbei eine Übersicht all meiner bisherigen UX-Projekte schaffen.
+Bei diesem Projekt für das Creative Lab "Web-Programmierung" handelt es sich um eine Portfolio-Website mit Fokus auf UX Design Projekten.
+Im Rahmen dieses Projekts sollen die Seiten Home, Über mich, Kontakt sowie eine Projektseite erstellt werden. Die Home-Seite wird hierbei als Verteilerseite zu ausgewählten UX-Projekten dienen.
 Der Inhalt der Portfolio-Website ist bewusst auf Englisch gewählt.
 <br><br>
 <h2>Zielsetzung</h2>
