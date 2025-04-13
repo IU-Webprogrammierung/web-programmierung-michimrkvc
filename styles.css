@@ -51,18 +51,6 @@ h1 {
     margin-top: 0px;
 }
 
-.icon-dark {
-    display: none;
-}
-
-.darkmode .icon-light {
-    display: none;
-}
-
-.darkmode .icon-dark {
-    display: block;
-}
-
 footer {
     display: flex;
     flex-direction: column;
@@ -89,45 +77,78 @@ span {
     color: var(--primary-color);
 }
 
-#theme-switch {
-    height: 30px;
-    width: 30px;
-    padding: 0;
-    margin-top: -16px;
-    border: none;
-    border-radius: 50%;
-    background-color: var(--base-variant);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    cursor: pointer;
-    right: 1rem;
-}
-
-#theme-switch img {
-    fill: var(--secondary-color)
-}
-
-#theme-switch img:last-child {
-    display: none;
-}
-
-.darkmode #theme-switch img {
-    fill: var(--primary-color)
-}
-
-.darkmode #theme-switch img:first-child {
-    display: none;
-}
-
-.darkmode #theme-switch img:last-child {
-    display: block;
-}
-
 /*  ===================
     Components & UI elements 
     =================== */
+
+.button {
+    background-color: var(--primary-color);
+    color: var(--background);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #6f4d38;
+}
+
+
+.card {
+    flex: 1 1 calc(45% - 32px);
+    max-width: 600px;
+    min-width: 300px;
+    flex-grow: 1;
+    border-radius: 12px;
+    background-color: var(--background);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 16px;
+    border: 1px solid #00000023;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-title {
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+.card-content {
+    color: var(--text);
+    padding-top: 4px;
+}
+
+.card img {
+    width: 100%;
+    min-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: left;
+    display: block;
+    image-rendering: auto;
+    border-radius: 12px;
+}
+
+.card:hover {
+    background-color: var(--card-hover);
+    transform: scale(1.02);
+    /* Vergrößert die Karte um 10% */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon-dark {
+    display: none;
+}
+
+.darkmode .icon-light {
+    display: none;
+}
+
+.darkmode .icon-dark {
+    display: block;
+}
 
 nav {
     background-color: var(--background);
@@ -196,60 +217,40 @@ nav {
     padding: 10px;
 }
 
-.card {
-    flex: 1 1 calc(45% - 32px);
-    max-width: 600px;
-    min-width: 300px;
-    flex-grow: 1;
-    border-radius: 12px;
-    background-color: var(--background);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 16px;
-    border: 1px solid #00000023;
-    text-decoration: none;
-    color: inherit;
-}
-
-.card-title {
-    padding-top: 12px;
-    font-weight: bold;
-}
-
-.card-content {
-    color: var(--text);
-    padding-top: 4px;
-}
-
-.card img {
-    width: 100%;
-    min-width: 300px;
-    height: 300px;
-    object-fit: cover;
-    object-position: left;
-    display: block;
-    image-rendering: auto;
-    border-radius: 12px;
-}
-
-.card:hover {
-    background-color: var(--card-hover);
-    transform: scale(1.02);
-    /* Vergrößert die Karte um 10% */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.button {
-    background-color: var(--primary-color);
-    color: var(--background);
-    padding: 12px 24px;
+#theme-switch {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    margin-top: -16px;
     border: none;
-    border-radius: 16px;
-    font-weight: 500;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
     cursor: pointer;
+    right: 1rem;
 }
 
-.button:hover {
-    background-color: #6f4d38;
+#theme-switch img {
+    fill: var(--secondary-color)
+}
+
+#theme-switch img:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch img {
+    fill: var(--primary-color)
+}
+
+.darkmode #theme-switch img:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch img:last-child {
+    display: block;
 }
 
 /*  ===================
@@ -298,10 +299,6 @@ nav {
     margin-top: auto;
     width: 20px;
     height: 20px;
-}
-
-.intro-about p {
-    margin-bottom: 16px;
 }
 
 .card a {
@@ -424,6 +421,10 @@ nav {
     max-width: 700px;
     font-size: 20px;
     font-weight: 300;
+}
+
+.intro-about p {
+    margin-bottom: 16px;
 }
 
 .logo-socials {
